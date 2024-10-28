@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <EditText
+                 android:id="@+id/Edit1"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="10dp"
+                 android:inputType="number"
+                 android:digits="1234567890"
+                 android:hint="지급액을 입력하세요">
+             </EditText>
+
+             <Button
+                 android:id="@+id/btn_add"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:text="소득세 판독"
+                 >
+
+             </Button>
+
+             <TextView
+                 android:id="@+id/TextResult1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="25dp"
+                 android:textColor="#FFFFFF"
+                 android:text="기타 소득세 : "
+                 >
+             </TextView>
+
+             <TextView
+                 android:id="@+id/TextResult2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="25dp"
+                 android:textColor="#FFFFFF"
+                 android:text="기타 지방소득세 : "
+                 >
+             </TextView>
+
+             <View
+                 android:background="#FFFFFF"
+                 android:layout_width="400dp"
+                 android:layout_height="3dp"/>
+
+             <TextView
+                 android:id="@+id/TextResult3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="25dp"
+                 android:textColor="#FFFFFF"
+                 android:text="사업 소득세 : "
+                 >
+             </TextView>
+
+             <TextView
+                 android:id="@+id/TextResult4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="25dp"
+                 android:textColor="#FFFFFF"
+                 android:text="사업 지방소득세 : "
+                 >
+             </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
